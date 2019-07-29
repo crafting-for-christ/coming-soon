@@ -1,0 +1,83 @@
+body, html {
+  height: 100%;
+}
+
+#breathing {
+  height: 100%;
+  width: 100%;
+  -webkit-animation:breathing 20s ease-out infinite normal;
+  animation:breathing 20s ease-out infinite normal;
+  -webkit-font-smoothing:antialiased;
+
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: fixed;
+  overflow: hidden;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.wrapper {
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+a {
+  color: black;
+  font-size: 30pt;
+}
+
+.icon {
+  padding: 10px;
+}
+
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform:scale(1);
+    transform:scale(1)
+  }
+
+  50% {
+    -webkit-transform:scale(1.05);
+    transform:scale(1.05)
+  }
+
+  100% {
+    -webkit-transform:scale(1);
+    transform:scale(1)}
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform:scale(1);
+    -ms-transform:scale(1);
+    transform:scale(1)
+  }
+
+  50% {
+    -webkit-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    transform:scale(1.05)
+  }
+
+  100% {
+    -webkit-transform:scale(1);
+    -ms-transform:scale(1);
+    transform:scale(1)
+  }
+}
