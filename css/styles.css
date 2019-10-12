@@ -9,7 +9,7 @@ body, html {
   animation:breathing 20s ease-out infinite normal;
   -webkit-font-smoothing:antialiased;
 
-  background-image: url("../img/background.png");
+  background-image: url("../img/cfc-background.png");
   background-size: cover;
   background-repeat: no-repeat;
 
